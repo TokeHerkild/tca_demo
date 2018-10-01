@@ -1,5 +1,17 @@
 #!/bin/bash
 
+echo Extension title in TYPO3 BE:
+read TITLE
+
+echo Author:
+read AUTHOR
+
+echo Author email:
+read AUTHOREMAIL
+
+echo Version:
+read VERSION
+
 echo Enter extKey:
 read EXTKEY
 
