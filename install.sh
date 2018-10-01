@@ -30,6 +30,7 @@ sed -i "s/{EXTNAME}/$EXTNAME/" composer.json
 sed -i "s/{DESCRIPTION}/$DESCRIPTION/" composer.json
 echo composer.json updated.
 
+# Updating ext_emconf.php
 sed -i "s/{DESCRIPTION}/$DESCRIPTION/" ext_emconf.php
 sed -i "s/{TITLE}/$TITLE/" ext_emconf.php
 sed -i "s/{AUTHOR}/$AUTHOR/" ext_emconf.php
