@@ -26,12 +26,15 @@ read DESCRIPTION
 # Updating composer.json
 sed -i "s/{extKey}/$extKey/" composer.json
 sed -i "s/{EXTKEY}/$EXTKEY/" composer.json
-
 sed -i "s/{EXTNAME}/$EXTNAME/" composer.json
-
 sed -i "s/{DESCRIPTION}/$DESCRIPTION/" composer.json
-
 echo composer.json updated.
 
+sed -i "s/{DESCRIPTION}/$DESCRIPTION/" ext_emconf.php
+sed -i "s/{TITLE}/$TITLE/" ext_emconf.php
+sed -i "s/{AUTHOR}/$AUTHOR/" ext_emconf.php
+sed -i "s/{AUTHOREMAIL}/$AUTHOREMAIL/" ext_emconf.php
+sed -i "s/{VERSION}/$VERSION/" ext_emconf.php
+echo ext_emconf.php updated
 
 echo
