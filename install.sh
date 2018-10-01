@@ -15,7 +15,7 @@ read VERSION
 echo Enter extKey:
 read EXTKEY
 
-extKey=${EXTKEY/\_/\-}
+extKey = `echo $EXTKEY|tr '_' '-'`
 
 arr=(${EXTKEY//_/ })
 printf -v EXTNAME %s "${arr[@]^}"
