@@ -3,7 +3,7 @@
 echo Enter extKey:
 read EXTKEY
 
-echo Enter ExtName (UpperCamelCase):
+echo Enter ExtName:
 read EXTNAME
 
 echo Enter description:
