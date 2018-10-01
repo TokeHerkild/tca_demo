@@ -1,0 +1,29 @@
+{
+  "name": "Webto/{EXTKEY}",
+  "type": "typo3-cms-extension",
+  "description": "{DESCRIPTION}",
+  "homepage": "https://www.webto.dk",
+  "license": ["GPL-2.0+"],
+  "keywords": ["Webto"],
+  "support": {
+    "issues": "https://www.webto.dk"
+  },
+  "require": {
+    "typo3/cms-core": "^8.7.0",
+    "georgringer/news": ">=3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webto\\{EXTNAME}\\": "Classes/"
+    }
+  },
+  "replace": {
+    "mailgun": "self.version",
+    "typo3-ter/mailgun": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "{EXTKEY}"
+    }
+  }
+}
