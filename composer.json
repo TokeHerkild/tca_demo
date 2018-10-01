@@ -1,5 +1,5 @@
 {
-  "name": "Webto/{EXTKEY}",
+  "name": "Webto/{extKey}",
   "type": "typo3-cms-extension",
   "description": "{DESCRIPTION}",
   "homepage": "https://www.webto.dk",
