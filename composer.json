@@ -1,5 +1,5 @@
 {
-  "name": "Webto/{extKey}",
+  "name": "webto/{extKey}",
   "type": "typo3-cms-extension",
   "description": "{DESCRIPTION}",
   "homepage": "https://www.webto.dk",
@@ -9,16 +9,12 @@
     "issues": "https://www.webto.dk"
   },
   "require": {
-    "typo3/cms-core": "^8.7.0",
+    "typo3/cms-core": "{COMPOSERCONSTRAINTS}"
   },
   "autoload": {
     "psr-4": {
       "Webto\\{EXTNAME}\\": "Classes/"
     }
-  },
-  "replace": {
-    "{extKey}": "self.version",
-    "typo3-ter/{extKey}": "self.version"
   },
   "extra": {
     "typo3/cms": {

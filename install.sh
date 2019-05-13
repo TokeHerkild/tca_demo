@@ -12,6 +12,12 @@ read AUTHOREMAIL
 echo Version:
 read VERSION
 
+echo Constraints composer:
+read COMPOSERCONSTRAINTS
+
+echo Constraints TYPO3:
+read TYPOCONSTRAINTS
+
 echo Enter extKey:
 read EXTKEY
 
@@ -28,6 +34,7 @@ sed -i "s/{extKey}/$extKey/" composer.json
 sed -i "s/{EXTKEY}/$EXTKEY/" composer.json
 sed -i "s/{EXTNAME}/$EXTNAME/" composer.json
 sed -i "s/{DESCRIPTION}/$DESCRIPTION/" composer.json
+sed -i "s/{COMPOSERCONSTRAINTS}/$COMPOSERCONSTRAINTS/" composer.json
 echo composer.json updated.
 
 # Updating ext_emconf.php
@@ -36,6 +43,7 @@ sed -i "s/{TITLE}/$TITLE/" ext_emconf.php
 sed -i "s/{AUTHOR}/$AUTHOR/" ext_emconf.php
 sed -i "s/{AUTHOREMAIL}/$AUTHOREMAIL/" ext_emconf.php
 sed -i "s/{VERSION}/$VERSION/" ext_emconf.php
+sed -i "s/{TYPOCONSTRAINTS}/$TYPOCONSTRAINTS/" ext_emconf.php
 echo ext_emconf.php updated
 
 echo
