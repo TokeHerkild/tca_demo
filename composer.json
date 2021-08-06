@@ -1,7 +1,7 @@
 {
-  "name": "webto/{extKey}",
+  "name": "webto/tca-demo",
   "type": "typo3-cms-extension",
-  "description": "{DESCRIPTION}",
+  "description": "Demonstrate issue with selectMultipleSideBySide",
   "homepage": "https://www.webto.dk",
   "license": ["GPL-2.0+"],
   "keywords": ["Webto"],
@@ -9,16 +9,16 @@
     "issues": "https://www.webto.dk"
   },
   "require": {
-    "typo3/cms-core": "{COMPOSERCONSTRAINTS}"
+    "typo3/cms-core": "^10.4"
   },
   "autoload": {
     "psr-4": {
-      "Webto\\{EXTNAME}\\": "Classes/"
+      "Webto\\TcaDemo\\": "Classes/"
     }
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "{EXTKEY}"
+      "extension-key": "tca_demo"
     }
   }
 }

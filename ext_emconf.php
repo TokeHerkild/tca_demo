@@ -1,11 +1,11 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => '{TITLE}',
-    'description' => '{DESCRIPTION}',
+    'title' => 'TCA Demo',
+    'description' => 'Demonstrate issue with selectMultipleSideBySide',
     'category' => 'plugin',
-    'author' => '{AUTHOR}',
-    'author_email' => '{AUTHOREMAIL}',
+    'author' => 'Toke Herkild',
+    'author_email' => 'toke@webto.dk',
     'company' => 'Webto ApS',
     'shy' => '',
     'priority' => '',
@@ -17,10 +17,10 @@ $EM_CONF[$_EXTKEY] = array(
     'modify_tables' => '',
     'clearCacheOnLoad' => 1,
     'lockType' => '',
-    'version' => '{VERSION}',
+    'version' => '1.0.0',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '{TYPOCONSTRAINTS}',
+            'typo3' => '10.4.0-0.0.0',
             'php' => '7.0.0-0.0.0',
         ),
         'conflicts' => array(
